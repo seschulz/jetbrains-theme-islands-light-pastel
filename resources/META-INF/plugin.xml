@@ -10,7 +10,7 @@
     <category>UI</category>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor url="https://www.yourcompany.com">seschulz</vendor>
+    <vendor url="https://github.com/seschulz/jetbrains-theme-islands-light-pastel">seschulz</vendor>
 
     <idea-version since-build="252.25557"/>
 
