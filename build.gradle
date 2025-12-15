@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '1.17.2'
+}
+
+group 'com.pasteltheme'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+// Ensure Gradle includes resources/ (where META-INF/plugin.xml is) into the plugin artifact
+sourceSets {
+    main {
+        resources.srcDir('resources')
+    }
+}
+
+intellij {
+    version = '2025.2'
+    type = 'IC' // IntelliJ IDEA Community Edition
+    plugins = []
+}
+
+tasks {
+    buildSearchableOptions {
+        enabled = false
+    }
+
+    patchPluginXml {
+        sinceBuild = '252'
+        untilBuild = '253.*'
+    }
+
+    signPlugin {
+        certificateChain = System.getenv("CERTIFICATE_CHAIN")
+        privateKey = System.getenv("PRIVATE_KEY")
+        password = System.getenv("PRIVATE_KEY_PASSWORD")
+    }
+
+    publishPlugin {
+        token = System.getenv("PUBLISH_TOKEN")
+    }
+}
+
