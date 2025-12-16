@@ -13,7 +13,7 @@
     <option name="ANNOTATIONS_COLOR" value="5A5D6B" />
     <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="000000" />
     <option name="CARET_ROW_COLOR" value="F5F8FE" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="FFFFEC" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="fffff9" />
     <option name="DELETED_LINES_COLOR" value="767A8A" />
     <option name="DIFF_SEPARATORS_BACKGROUND" value="E4E6EB" />
     <option name="DOCUMENTATION_COLOR" value="FFFFFF" />
@@ -471,7 +471,7 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="80808" />
-        <option name="BACKGROUND" value="ffffec" />
+        <option name="BACKGROUND" value="ffffef" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
