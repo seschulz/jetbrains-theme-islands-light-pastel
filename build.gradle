@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.theme'
-version '1.0.2'
+version '1.0.3'
 
 repositories {
     mavenCentral()
@@ -30,7 +30,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild = '252'
-        untilBuild = '253.*'
+        untilBuild = ''
     }
 
     signPlugin {
